@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinayak Dangwal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "boyvanky11@gmail.com",
+            Password : "AF3264E31420BB7BEF001EA8944C04527E39",
+            To : document.getElementById("contact_email").value,
+            From : "boyvanky11@gmail.com",
+            Subject : "New contact inquiry",
+            Body : "Name: "+document.getElementById("contact_name").value+"<br>Email: "+document.getElementById("contact_email").value+
+            "<br>Message: "+document.getElementById("contact_message").value
+        }).then(
+          alert("Kindly Check spam Folder or Inbox. Email Sent")
+        );
+        }
+    </script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><span>V</span>inayak.</h1>
+                </div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="header-text">
+                    <p>Coder / Film-Maker</p>
+                    <h3>Hi, I am <span>Vinayak</span><br>Dangwal from Delhi</h3>
+                </div>
+                <div class="header-image">
+                    <img src="me_light3.jpg">
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-----about------>
+    <div id="about"><div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="me_kurta.jpg" ">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Vinayak Dangwal, an undergraduate student of Sri Guru Tegh Bahadur (S.G.T.B) Khalsa College
+                    pursuing Bsc Computer Science (Hons) since 2021. I am a coding enthusiast as well as an avid film-maker.
+                    Equipped with the knowledge of Japense language till N4 level and been a part of various Model United Nations
+                    Conferences, I love to explore new areas of creativity and social interactions.
+                </p>
+                
+                    <div class="tab-titles">
+                    <table style="width:100%">
+                    <tr>
+                        <td class="tab-links active-link" onclick="opentab('skills')">Skills</td>
+                        <td class="tab-links" onclick="opentab('education')">Education</td>
+                    </tr>
+                    </table>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                    <table style="width:100%">
+                    <tr >
+                        <td><span>Coding</span><br>C++, Java</td>
+                        <td><span>Elementary School (2007-2009)</span><br>East Point School</td>
+                    </tr>
+                    <tr style="height:60px">
+                        <td><span>Web Development</span><br>HTML, CSS, Javascript</td>
+                        <td><span>Schooling (2010-2021)</span><br>East Point School<br>Secondary- 95.4%<br>Senior Secondary- 96%</td>
+                    </tr>
+                    <tr style="height:60px">
+                        <td><span>Filmography</span><br>Cinematogrpahy, Direction, Editing</td>
+                        <td><span>Undergraduation</span><br>Sri Guru Tegh Bahadur (S.G.T.B) Khalsa College,<br> Delhi University<br>Bsc Computer Science (Hons)</td>
+                    </tr>
+                    <tr style="height:60px">
+                        <td><span>Miscellaneous</span><br>Japanese, Public Relations</td>
+                    </tr>
+                    </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="coding.jpg">
+                    <div class="layer">
+                        <h2>Coding</h2>
+                        <ul>
+                            <li>Proficient in Python, C++ and JAVA</li>
+                            <li>Underway in learning Web Development using <br>HTML and CSS</li>
+                            <li>Steady grip on discrete structures <br>algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="rehmat.jpg">
+                    <div class="layer">
+                        <h2>Film-Making</h2>
+                        <ul>
+                            <li>Winner of All India ADOBE Creativity <br>Challenge in Film-Making</li>
+                            <li>Organizer of EPS Film Fest 2020</li>
+                            <li>Winner of Sneak Peek 2022 Film-Production<br>contest</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="mun_pic.jpg">
+                    <div class="layer">
+                        <h2>Model United Nations</h2>
+                        <ul>
+                            <li>Secretary General at EPS Youth MUN<br> Colloquium 2019</li>
+                            <li>High Commendation at Salwan MUN <br>2020</li>
+                            <li>High Commendation at LAXMUN 2021</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/in/vinayak-dangwal-08030422a/" class="btn">See more</a>
+    </div>
+
+    <div id="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>boyvanky11@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/vinayak.dangwal.75/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/DangwalVinayak"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/vinayak-dangwal-08030422a/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Vinayak_Dangwal_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" name="Name" placeholder="Your Name" required id="contact_name">
+                        <input type="text" name="Email" placeholder="Your Email" required id="contact_email">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required id="contact_message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vinayak. Made for Professional Purposes. </p>
+    </div>
+    
+</body>
+</html>
